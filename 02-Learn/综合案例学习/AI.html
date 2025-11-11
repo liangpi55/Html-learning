@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 规范示例页面</title>
+    <style>
+        /* 内联样式示例（实际开发建议外部引入） */
+        body { font-family: "微软雅黑", sans-serif; margin: 0 auto; max-width: 1200px; padding: 20px; }
+        header, nav, main, section, footer { margin-bottom: 20px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <!-- 头部区域：语义化标签header -->
+    <header>
+        <h1>HTML5 规范学习示例</h1>
+        <p>这是一个符合 HTML5 规范的页面结构示例</p>
+    </header>
+
+    <!-- 导航区域：语义化标签nav -->
+    <nav>
+        <ul>
+            <li><a href="#section1">语义化标签</a></li>
+            <li><a href="#section2">表单元素</a></li>
+            <li><a href="#section3">多媒体</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主体内容：语义化标签main -->
+    <main>
+        <!-- 章节1：语义化标签 -->
+        <section id="section1">
+            <h2>一、语义化标签</h2>
+            <p>HTML5 新增了大量语义化标签，让页面结构更清晰，例如：</p>
+            <ul>
+                <li><code>&lt;header&gt;</code>：页面或区块的头部</li>
+                <li><code>&lt;nav&gt;</code>：导航区域</li>
+                <li><code>&lt;main&gt;</code>：页面主要内容</li>
+                <li><code>&lt;section&gt;</code>：内容区块</li>
+                <li><code>&lt;footer&gt;</code>：页面或区块的底部</li>
+            </ul>
+        </section>
+
+        <!-- 章节2：表单元素 -->
+        <section id="section2">
+            <h2>二、表单元素</h2>
+            <form action="#" method="get">
+                <label for="username">用户名：</label>
+                <input type="text" id="username" name="username" required placeholder="请输入用户名">
+                <br>
+                <label for="password">密码：</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <label>性别：</label>
+                <input type="radio" id="male" name="gender" value="male" checked>
+                <label for="male">男</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">女</label>
+                <br>
+                <label for="hobby">爱好：</label>
+                <select id="hobby" name="hobby" multiple>
+                    <option value="reading">阅读</option>
+                    <option value="music">音乐</option>
+                    <option value="sports">运动</option>
+                </select>
+                <br>
+                <button type="submit">提交</button>
+                <button type="reset">重置</button>
+            </form>
+        </section>
+
+        <!-- 章节3：多媒体 -->
+        <section id="section3">
+            <h2>三、多媒体元素</h2>
+            <p>HTML5 支持原生音频和视频播放：</p>
+            <audio controls src="https://example.com/audio.mp3">
+                您的浏览器不支持音频播放
+            </audio>
+            <br>
+            <video controls width="400" src="https://example.com/video.mp4">
+                您的浏览器不支持视频播放
+            </video>
+            <br>
+            <img src="https://picsum.photos/400/200" alt="示例图片" title="这是一张示例图片">
+        </section>
+    </main>
+
+    <!-- 底部区域：语义化标签footer -->
+    <footer>
+        <p>&copy; 2025 HTML5 规范学习示例 | 学习使我进步</p>
+    </footer>
+</body>
+</html>
